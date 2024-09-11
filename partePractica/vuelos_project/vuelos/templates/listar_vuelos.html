@@ -1,0 +1,8 @@
+<h1>Lista de vuelos</h1>
+<ul>
+    {% for vuelo in vuelos %}
+        <li>
+            {{ vuelo.nombre }} - {{ vuelo.get_tipo_display }} - ${{ vuelo.precio }}
+        </li>
+    {% endfor %}
+</ul>
